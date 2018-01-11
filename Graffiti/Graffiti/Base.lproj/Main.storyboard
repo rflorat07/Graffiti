@@ -53,7 +53,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Añadir" id="vXy-e3-uMZ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="U6g-Ep-a9I" kind="show" identifier="tagGraffiti" id="yjf-75-897"/>
+                                <segue destination="U6g-Ep-a9I" kind="show" identifier="TagGraffiti" id="yjf-75-897"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,7 +76,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="GFA-fj-9jw">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="GFA-fj-9jw">
                                 <rect key="frame" x="0.0" y="64" width="375" height="375"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="Q2o-H9-E2v"/>
@@ -158,10 +158,17 @@
                                 <action selector="cancelPressed:" destination="zQS-AQ-fqh" id="YvY-In-0uR"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="N2X-pC-h6X">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="N2X-pC-h6X">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="vUI-1g-hEY" id="8O9-KY-63J"/>
+                        <outlet property="imgGraffiti" destination="GFA-fj-9jw" id="5FR-St-aQA"/>
+                        <outlet property="latitudeLabel" destination="yNz-YT-Exs" id="20l-zL-A4o"/>
+                        <outlet property="longitudeLabel" destination="aWZ-za-5Ny" id="rIh-Vu-4ko"/>
+                        <outlet property="saveButtom" destination="N2X-pC-h6X" id="TY4-Su-R8D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vM7-YB-iih" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -40,5 +40,9 @@
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Graffiti utiliza tu localización para guardar graffitis molones.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Necesitamos acceso a la cámara para sacar fotos del Graffiti</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Necesitamos acceso a la librería de fotos para seleccionar la foto del Graffiti</string>
 </dict>
 </plist>
