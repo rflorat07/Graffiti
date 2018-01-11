@@ -12,6 +12,7 @@
 		4F3CBCDE2007774C00A6119C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3CBCDC2007774C00A6119C /* Main.storyboard */; };
 		4F3CBCE02007774C00A6119C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F3CBCDF2007774C00A6119C /* Assets.xcassets */; };
 		4F3CBCE32007774C00A6119C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3CBCE12007774C00A6119C /* LaunchScreen.storyboard */; };
+		4F3CBCEC200787BD00A6119C /* GraffitiDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CBCEB200787BD00A6119C /* GraffitiDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4F3CBCDF2007774C00A6119C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F3CBCE22007774C00A6119C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F3CBCE42007774C00A6119C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F3CBCEB200787BD00A6119C /* GraffitiDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraffitiDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				4F3CBCD82007774C00A6119C /* AppDelegate.swift */,
 				4F3CBCDA2007774C00A6119C /* ViewController.swift */,
+				4F3CBCEB200787BD00A6119C /* GraffitiDetailsViewController.swift */,
 				4F3CBCDC2007774C00A6119C /* Main.storyboard */,
 				4F3CBCDF2007774C00A6119C /* Assets.xcassets */,
 				4F3CBCE12007774C00A6119C /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			files = (
 				4F3CBCDB2007774C00A6119C /* ViewController.swift in Sources */,
 				4F3CBCD92007774C00A6119C /* AppDelegate.swift in Sources */,
+				4F3CBCEC200787BD00A6119C /* GraffitiDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
