@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F16DA7F2008AB100000DB72 /* GraffitiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16DA7E2008AB100000DB72 /* GraffitiManager.swift */; };
+		4F16DA812008BCD40000DB72 /* GraffitiImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F16DA802008BCD40000DB72 /* GraffitiImageViewController.swift */; };
 		4F3CBCD92007774C00A6119C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CBCD82007774C00A6119C /* AppDelegate.swift */; };
 		4F3CBCDB2007774C00A6119C /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3CBCDA2007774C00A6119C /* CurrentLocationViewController.swift */; };
 		4F3CBCDE2007774C00A6119C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3CBCDC2007774C00A6119C /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F16DA7E2008AB100000DB72 /* GraffitiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraffitiManager.swift; sourceTree = "<group>"; };
+		4F16DA802008BCD40000DB72 /* GraffitiImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraffitiImageViewController.swift; sourceTree = "<group>"; };
 		4F3CBCD52007774C00A6119C /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3CBCD82007774C00A6119C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F3CBCDA2007774C00A6119C /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				4F3CBCE12007774C00A6119C /* LaunchScreen.storyboard */,
 				4F3CBCE42007774C00A6119C /* Info.plist */,
 				4F3CBCED2007999200A6119C /* Graffiti.swift */,
+				4F16DA7E2008AB100000DB72 /* GraffitiManager.swift */,
+				4F16DA802008BCD40000DB72 /* GraffitiImageViewController.swift */,
 			);
 			path = Graffiti;
 			sourceTree = "<group>";
@@ -144,7 +150,9 @@
 			files = (
 				4F3CBCDB2007774C00A6119C /* CurrentLocationViewController.swift in Sources */,
 				4F3CBCEE2007999200A6119C /* Graffiti.swift in Sources */,
+				4F16DA7F2008AB100000DB72 /* GraffitiManager.swift in Sources */,
 				4F3CBCD92007774C00A6119C /* AppDelegate.swift in Sources */,
+				4F16DA812008BCD40000DB72 /* GraffitiImageViewController.swift in Sources */,
 				4F3CBCEC200787BD00A6119C /* GraffitiDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

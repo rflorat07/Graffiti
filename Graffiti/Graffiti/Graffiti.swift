@@ -9,8 +9,8 @@
 import UIKit
 import MapKit
 
-class Graffiti: NSObject {
-    
+class Graffiti: NSObject, NSCoding {
+
     let graffitiAddress : String
     let graffitiLatitude : Double
     let graffitiLongitude : Double
@@ -21,6 +21,27 @@ class Graffiti: NSObject {
         self.graffitiLatitude = latitude
         self.graffitiLongitude = longitude
         self.graffitiImgName = image
+    }
+    
+    // MARK: NSCoding
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        
+        let graffitiAddress = aDecoder.decodeObject(forKey: "graffitiAddress") as! String
+        let graffitiLatitude = aDecoder.decodeDouble(forKey: "graffitiLatitude")
+        let graffitiLongitude = aDecoder.decodeDouble(forKey: "graffitiLongitude")
+        let graffitiImgName = aDecoder.decodeObject(forKey: "graffitiImgName") as! String
+        
+        self.init(addres: graffitiAddress, latitude: graffitiLatitude, longitude: graffitiLongitude, image: graffitiImgName)
+        
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        
+        aCoder.encode(self.graffitiAddress, forKey: "graffitiAddress")
+        aCoder.encode(self.graffitiLatitude, forKey: "graffitiLatitude")
+        aCoder.encode(self.graffitiLongitude, forKey: "graffitiLongitude")
+        aCoder.encode(self.graffitiImgName, forKey: "graffitiImgName")
     }
     
 }

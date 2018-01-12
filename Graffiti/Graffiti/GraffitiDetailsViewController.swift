@@ -49,6 +49,26 @@ class GraffitiDetailsViewController: UIViewController {
         addressLabel.text = taggedGraffiti?.graffitiAddress
     }
     
+    @IBAction func saveGraffiti(_ sender: AnyObject) {
+        if let image = imgGraffiti.image {
+            let randomName = UUID().uuidString.appending(".png")
+            if let url = GraffitiManager.sharedInstance.imagesURL()?.appendingPathComponent(randomName),
+                let imageData = UIImagePNGRepresentation(image) {
+                do {
+                    try imageData.write(to: url)
+                } catch( let error) {
+                    print("Error salvando la imagen: \(error)")
+                }
+            }
+            taggedGraffiti = Graffiti(addres: addressLabel.text!, latitude: Double(latitudeLabel.text!)!, longitude: Double(longitudeLabel.text!)!, image: randomName)
+            
+            if let taggedGraffiti = taggedGraffiti {
+                delegate?.graffitiDidFinishGetTagged(sender: self, taggedGraffiti: taggedGraffiti)
+            }
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension GraffitiDetailsViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -101,7 +121,7 @@ extension GraffitiDetailsViewController: UIImagePickerControllerDelegate, UINavi
         imagePicker.delegate = self
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
-    
+        
         present(imagePicker, animated: true, completion: nil)
         
     }
